@@ -1,14 +1,12 @@
 package main
 
 import (
-	"GolangForCode/structs"
-	"fmt"
+	"GolangForCode/polymorphism"
 )
 
 func main() {
 
-	p := structs.NewPerson("Ajay", "Tiwary", 33)
-
-	fmt.Println(p)
+	var p polymorphism.Shape = polymorphism.Circle{}
+	p.Render()
 
 }
