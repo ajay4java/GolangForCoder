@@ -1,12 +1,14 @@
 package main
 
 import (
-	"GolangForCode/polymorphism"
+	"GolangForCode/composition"
+	"fmt"
 )
 
 func main() {
-
-	var p polymorphism.Shape = polymorphism.Circle{}
-	p.Render()
+	c := composition.NewCar("testCar", 600, 123)
+	fmt.Println(c)
+	fmt.Println(c.Engine.HP())
+	fmt.Println(c.Wheel.WheelDimensions())
 
 }
